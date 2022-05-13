@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/Roboto-Medium.ttf');
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --body-background-color: white;
+    --header-background-color: #090808;
+    --footer-background-color: #737373;
+    --text-color: black;
+    --logo-color: white;
+    --form-border-color: black;
+    --input-border-color: black;
+    --button-color: white;
+    --button-background-color: black;
+    --button-border-color: black;
+    --button-hover-shadow: -8px 10px 9px -9px rgba(34, 60, 80, 0.26);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'roboto', 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--body-background-color);
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/*удаление стрелок "вверх" "вниз", у input type='number'*/
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
